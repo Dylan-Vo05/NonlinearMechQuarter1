@@ -91,7 +91,7 @@ def main():
         sampling_timesteps = config['sampling_timesteps'],
     )
 
-    data_dir = vast_dir + 'data/' + config['reference_frame'] + '/train/'
+    data_dir = vast_dir + 'data/' + config['reference_frame'] + '/training/'
     data_dir_validation = vast_dir + 'data/' + config['reference_frame'] + '/validation/'
 
     trainer = Trainer(
