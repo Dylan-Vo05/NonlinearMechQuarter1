@@ -10,7 +10,7 @@ def main():
 
     ### User input ###
     # define run name, if run name already exists and is not 'pretrained', load_model_step must be provided
-    run_name = 'pretrained'
+    run_name = 'baseline'
 
     if run_name == 'pretrained':
         load_model_step = 200000  # pretrained model was trained for 200k steps
@@ -35,10 +35,11 @@ def main():
 
     # store data in given directory
     cur_dir = './'  # local path to repo
-    run_dir = cur_dir + '/runs/' + run_name + '/'
+    vast_dir = '/cosmos/vast/scratch/dyvo/'  # path to vast scratch directory
+    run_dir = vast_dir + run_name + '/'  # path to store results
 
     # path to target stress-strain curves
-    target_labels_dir = cur_dir + 'data/target_responses.csv'
+    target_labels_dir = vast_dir + 'data/target_responses.csv'
 
     # check if directory exists
     if os.path.exists(run_dir):
@@ -90,8 +91,8 @@ def main():
         sampling_timesteps = config['sampling_timesteps'],
     )
 
-    data_dir = cur_dir + 'data/' + config['reference_frame'] + '/training/'
-    data_dir_validation = cur_dir + 'data/' + config['reference_frame'] + '/validation/'
+    data_dir = vast_dir + 'data/' + config['reference_frame'] + '/train/'
+    data_dir_validation = vast_dir + 'data/' + config['reference_frame'] + '/validation/'
 
     trainer = Trainer(
         diffusion,
