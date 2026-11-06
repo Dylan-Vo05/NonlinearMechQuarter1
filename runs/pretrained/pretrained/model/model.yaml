@@ -1,0 +1,22 @@
+batch_size: 4
+learning_rate: 0.0001
+selected_channels:
+- 0
+- 1
+- 3
+train_timesteps: 256
+sampling_timesteps: 256
+use_dynamic_thres: true
+reference_frame: lagrangian
+padding_mode: zeros
+unet_dim: 64
+unet_attn_dim_head: 32
+unet_attn_heads: 8
+unet_resnet_groups: 8
+unet_cond_attention: self-stacked
+unet_cond_to_time: add
+unet_temporal_att_cond: true
+unet_use_sparse_linear_attn: true
+per_frame_cond: true
+unet_cond_att_GRU: false
+unet_cond_attention_tokens: 16
