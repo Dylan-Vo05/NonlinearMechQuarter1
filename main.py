@@ -36,7 +36,7 @@ def main():
     # store data in given directory
     cur_dir = './'  # local path to repo
     vast_dir = '/cosmos/vast/scratch/dyvo/'  # path to vast scratch directory
-    run_dir = vast_dir + run_name + '/'  # path to store results
+    run_dir = vast_dir + 'nonlinearmech_runs/' + run_name + '/'  # path to store results
 
     # path to target stress-strain curves
     target_labels_dir = vast_dir + 'data/target_responses.csv'
