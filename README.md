@@ -48,7 +48,7 @@ Their implementation builds on Phil Wang's [video diffusion code](https://github
 │   ├── target_responses.csv      # Target stress–strain curves (one per row, 11 strain points)
 │   └── lagrangian/               # Training/validation data (download separately, see below)
 └── runs/
-    └── pretrained/               # Authors' pretrained checkpoint (Git LFS)
+    └── pretrained/               # Authors' pretrained checkpoint (Git LFS), our own runs are stored on Cosmos
 ```
 
 ## Setup
@@ -59,6 +59,7 @@ Their implementation builds on Phil Wang's [video diffusion code](https://github
    git clone https://github.com/Dylan-Vo05/NonlinearMechQuarter1.git
    cd NonlinearMechQuarter1
    ```
+   > **Note:** ZIP downloads (including our Gradescope submission) do not include the pretrained checkpoint. `runs/pretrained/pretrained/model/step_200000/checkpoint.pt` is only a small Git LFS pointer file. To get the full ~620 MB model, clone with Git LFS as shown above, or download `pretrained.zip` from the [ETHZ Research Collection](https://doi.org/10.3929/ethz-b-000629716).
 
 2. **Install dependencies** (Python 3.11, NVIDIA GPU with CUDA):
    ```bash
