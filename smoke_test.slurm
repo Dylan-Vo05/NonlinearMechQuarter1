@@ -28,14 +28,7 @@ echo "=========================================="
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 export PYTHONUNBUFFERED=1
 
-
-accelerate launch \
-    --num_processes 1 \
-    --num_machines 1 \
-    --mixed_precision fp16 \
-    --dynamo_backend no \
-    smoke_checkpoint_test.py
-
+python -u smoke_test.py
 
 EXIT_CODE=$?
 
