@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #SBATCH --job-name=nonlinear_smoke
 #SBATCH --partition=cluster
