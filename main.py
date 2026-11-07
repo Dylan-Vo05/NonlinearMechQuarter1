@@ -10,7 +10,7 @@ def main():
 
     ### User input ###
     # define run name, if run name already exists and is not 'pretrained', load_model_step must be provided
-    run_name = 'smoke_test_3'
+    run_name = 'baseline'
 
     if run_name == 'pretrained':
         load_model_step = 200000  # pretrained model was trained for 200k steps
@@ -104,7 +104,7 @@ def main():
         test_batch_size = config['batch_size'],
         train_lr = config['learning_rate'],
         save_and_sample_every = 1000,
-        train_num_steps = 10000,
+        train_num_steps = 200000,
         ema_decay = 0.995,
         log = True,
         null_cond_prob = 0.1,
