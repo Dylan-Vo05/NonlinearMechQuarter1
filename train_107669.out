@@ -1,8 +1,0 @@
-/var/spool/slurmd/job107669/slurm_script: line 12: cd: /cosmos/nfs/home/dyvo/nonlinearmech: No such file or directory
-Running on: x8000c0s4b0n0
-SLURM job ID: 107669
-PyTorch: 2.10.0+rocm7.0
-HIP: 7.0.51831
-CUDA available: True
-Device count: 4
-Device: AMD Instinct MI300A
