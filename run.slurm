@@ -34,7 +34,7 @@ accelerate launch \
     --num_machines 1 \
     --mixed_precision fp16 \
     --dynamo_backend no \
-    smoke_test.py
+    main.py
 
 EXIT_CODE=$?
 
