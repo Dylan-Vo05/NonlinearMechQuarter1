@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=nonlinear_smoke
+#SBATCH --job-name=nonlinear_baseline
 #SBATCH --partition=cluster
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=96
-#SBATCH --time=00:30:00
-#SBATCH --output=smoke_%j.out
-#SBATCH --error=smoke_%j.err
+#SBATCH --time=23:59:59
+#SBATCH --output=baseline_%j.out
+#SBATCH --error=baseline_%j.err
 
 module purge
 module load rocm/7.0.0
@@ -18,7 +18,7 @@ source ~/venvs/nonlinearmech/bin/activate
 cd /cosmos/nfs/home/dyvo/NonlinearMechQuarter1
 
 echo "=========================================="
-echo "Starting NonlinearMech smoke test"
+echo "Starting NonlinearMech baseline test"
 echo "Job ID: $SLURM_JOB_ID"
 echo "Node: $(hostname)"
 echo "Date: $(date)"
@@ -34,9 +34,9 @@ accelerate launch main.py
 EXIT_CODE=$?
 
 if [ $EXIT_CODE -eq 0 ]; then
-    echo "SMOKE TEST PASSED"
+    echo "Baseline TEST PASSED"
 else
-    echo "SMOKE TEST FAILED: exit code $EXIT_CODE"
+    echo "Baseline TEST FAILED: exit code $EXIT_CODE"
 fi
 
 exit $EXIT_CODE
