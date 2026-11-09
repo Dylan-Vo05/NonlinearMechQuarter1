@@ -5,6 +5,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=96
 #SBATCH --time=00:30:00
+#SBATCH --exclusive
 #SBATCH --output=smoke_%j.out
 #SBATCH --error=smoke_%j.err
 

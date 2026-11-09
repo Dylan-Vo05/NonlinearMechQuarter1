@@ -27,7 +27,7 @@ export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 export PYTHONUNBUFFERED=1
 
 
-accelerate launch main.py
+accelerate launch --mixed_precision=fp16 --num_processes=4 --num_machines=1 --dynamo_backend=no main.py 
 
 EXIT_CODE=$?
 
