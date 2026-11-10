@@ -4,7 +4,6 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --exclusive
-#SBATCH --cpus-per-task=96
 #SBATCH --time=23:59:59
 #SBATCH --output=baseline_%j.out
 #SBATCH --error=baseline_%j.err
@@ -23,11 +22,14 @@ echo "Node: $(hostname)"
 echo "Date: $(date)"
 
 
-export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
-export PYTHONUNBUFFERED=1
+#export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+#export PYTHONUNBUFFERED=1
+export MIOPEN_FIND_MODE=3
+export MIOPEN_FIND_ENFORCE=3
+export MIOPEN_USER_DB_PATH=/tmp/$USER/my-miopen-cache
+export PYTORCH_TUNABLEOP_ENABLED=1
 
-
-accelerate launch --mixed_precision=fp16 --num_processes=4 --num_machines=1 --dynamo_backend=no main.py 
+accelerate launch --mixed_precision=fp16 --num_processes=4 --num_machines=1 --dynamo_backend=no --enable numa_affinity main.py 
 
 EXIT_CODE=$?
 
