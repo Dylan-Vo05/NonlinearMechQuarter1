@@ -29,7 +29,7 @@ export MIOPEN_FIND_ENFORCE=3
 export MIOPEN_USER_DB_PATH=/tmp/$USER/my-miopen-cache
 export PYTORCH_TUNABLEOP_ENABLED=1
 
-accelerate launch --mixed_precision=fp16 --num_processes=4 --num_machines=1 --dynamo_backend=no --enable numa_affinity main.py 
+accelerate launch --mixed_precision=fp16 --num_processes=4 --num_machines=1 --dynamo_backend=no --enable_numa_affinity main.py 
 
 EXIT_CODE=$?
 
