@@ -21,9 +21,6 @@ echo "Job ID: $SLURM_JOB_ID"
 echo "Node: $(hostname)"
 echo "Date: $(date)"
 
-
-#export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
-#export PYTHONUNBUFFERED=1
 export MIOPEN_FIND_MODE=3
 export MIOPEN_FIND_ENFORCE=3
 export MIOPEN_USER_DB_PATH=/tmp/$USER/my-miopen-cache
