@@ -10,7 +10,7 @@ def main():
 
     ### User input ###
     # define run name, if run name already exists and is not 'pretrained', load_model_step must be provided
-    run_name = 'baseline_4'
+    run_name = 'nccl_test'
 
     if run_name == 'pretrained':
         load_model_step = 200000  # pretrained model was trained for 200k steps
@@ -28,7 +28,7 @@ def main():
     ###
 
     # initialize distributed training
-    dist.init_process_group(backend='gloo')
+    dist.init_process_group(backend='nccl')
     ddp_kwargs = DistributedDataParallelKwargs(find_unused_parameters=True)
     ip_kwargs = InitProcessGroupKwargs(timeout=datetime.timedelta(seconds=60*10))  # required to prevent timeout error when nonequal distribution of samplings to GPUs
     accelerator = Accelerator(mixed_precision='fp16', kwargs_handlers=[ddp_kwargs, ip_kwargs], log_with='wandb' if wandb_username is not None else None)
