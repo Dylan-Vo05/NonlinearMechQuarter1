@@ -10,7 +10,7 @@ def main():
 
     ### User input ###
     # define run name, if run name already exists and is not 'pretrained', load_model_step must be provided
-    run_name = 'baseline_3'
+    run_name = 'baseline_4'
 
     if run_name == 'pretrained':
         load_model_step = 200000  # pretrained model was trained for 200k steps
