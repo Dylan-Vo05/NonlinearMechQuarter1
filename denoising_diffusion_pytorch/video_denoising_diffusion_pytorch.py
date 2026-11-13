@@ -1571,7 +1571,7 @@ class Trainer(object):
 
         # to avoid extra GPU memory usage in main process when using Accelerate
         with open(path, 'rb') as f:
-            loaded_obj = torch.load(f, map_location='cpu')
+            loaded_obj = torch.load(f, map_location='cpu', weights_only=True)
 
         try:
             self.model.load_state_dict(loaded_obj['model'], strict = strict)

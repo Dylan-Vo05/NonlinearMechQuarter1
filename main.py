@@ -28,7 +28,7 @@ def main():
     ###
 
     # initialize distributed training
-    dist.init_process_group(backend='nccl')
+    dist.init_process_group(backend='gloo')
     ddp_kwargs = DistributedDataParallelKwargs(find_unused_parameters=True)
     ip_kwargs = InitProcessGroupKwargs(timeout=datetime.timedelta(seconds=60*10))  # required to prevent timeout error when nonequal distribution of samplings to GPUs
     accelerator = Accelerator(mixed_precision='fp16', kwargs_handlers=[ddp_kwargs, ip_kwargs], log_with='wandb' if wandb_username is not None else None)
@@ -106,7 +106,7 @@ def main():
         save_and_sample_every = 1000,
         train_num_steps = 1000,
         ema_decay = 0.995,
-        log = True,
+        log = False,
         null_cond_prob = 0.1,
         per_frame_cond = config['per_frame_cond'],
         reference_frame = config['reference_frame'],
