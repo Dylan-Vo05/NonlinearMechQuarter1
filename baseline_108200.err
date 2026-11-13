@@ -1,0 +1,304 @@
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/accelerate/accelerator.py:432: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(**kwargs)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/accelerate/accelerator.py:432: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(**kwargs)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/accelerate/accelerator.py:432: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(**kwargs)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[rank0]:[W1112 02:18:23.120307090 ProcessGroupNCCL.cpp:5138] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/accelerate/accelerator.py:432: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(**kwargs)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/accelerate/accelerator.py:1256: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  model.forward = torch.cuda.amp.autocast(dtype=torch.float16)(model.forward)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/accelerate/accelerator.py:1256: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  model.forward = torch.cuda.amp.autocast(dtype=torch.float16)(model.forward)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/accelerate/accelerator.py:1256: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  model.forward = torch.cuda.amp.autocast(dtype=torch.float16)(model.forward)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/accelerate/accelerator.py:1256: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  model.forward = torch.cuda.amp.autocast(dtype=torch.float16)(model.forward)
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+sampling loop time step:   0%|          | 0/256 [00:00<?, ?it/s][rank0]:[E1112 03:00:07.492077170 ProcessGroupNCCL.cpp:688] [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=10353, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=600000) ran for 600023 milliseconds before timing out.
+[rank0]:[E1112 03:00:07.530444735 ProcessGroupNCCL.cpp:2277] [PG ID 0 PG GUID 0(default_pg) Rank 0]  failure detected by watchdog at work sequence id: 10353 PG status: last enqueued work: 10353, last completed work: 10352
+[rank0]:[E1112 03:00:07.530455745 ProcessGroupNCCL.cpp:735] Stack trace of the failed collective not found, potentially because FlightRecorder is disabled. You can enable it by setting TORCH_NCCL_TRACE_BUFFER_SIZE to a non-zero value.
+[rank0]:[E1112 03:00:07.530550015 ProcessGroupNCCL.cpp:2610] [PG ID 0 PG GUID 0(default_pg) Rank 0] First PG on this rank to signal dumping.
+[rank3]:[E1112 03:00:07.536120431 ProcessGroupNCCL.cpp:1825] [PG ID 0 PG GUID 0(default_pg) Rank 3] Observed flight recorder dump signal from another rank via TCPStore.
+[rank3]:[E1112 03:00:07.536293013 ProcessGroupNCCL.cpp:1890] [PG ID 0 PG GUID 0(default_pg) Rank 3] Received a dump signal due to a collective timeout from  rank 0 and we will try our best to dump the debug info. Last enqueued NCCL work: 10352, last completed NCCL work: 10352.This is most likely caused by incorrect usages of collectives, e.g., wrong sizes used across ranks, the order of collectives is not same for all ranks or the scheduled collective, for some reason, didn't run. Additionally, this can be caused by GIL deadlock or other reasons such as network errors or bugs in the communications library (e.g. NCCL), etc. 
+[rank3]:[E1112 03:00:07.582611997 ProcessGroupNCCL.cpp:1606] [PG ID 0 PG GUID 0(default_pg) Rank 3] ProcessGroupNCCL preparing to dump debug info. Include stack trace: 1, only active collectives: 0
+[rank2]:[E1112 03:00:08.485500092 ProcessGroupNCCL.cpp:1825] [PG ID 0 PG GUID 0(default_pg) Rank 2] Observed flight recorder dump signal from another rank via TCPStore.
+[rank2]:[E1112 03:00:08.485664043 ProcessGroupNCCL.cpp:1890] [PG ID 0 PG GUID 0(default_pg) Rank 2] Received a dump signal due to a collective timeout from  rank 0 and we will try our best to dump the debug info. Last enqueued NCCL work: 10353, last completed NCCL work: 10352.This is most likely caused by incorrect usages of collectives, e.g., wrong sizes used across ranks, the order of collectives is not same for all ranks or the scheduled collective, for some reason, didn't run. Additionally, this can be caused by GIL deadlock or other reasons such as network errors or bugs in the communications library (e.g. NCCL), etc. 
+[rank2]:[E1112 03:00:08.486127676 ProcessGroupNCCL.cpp:1606] [PG ID 0 PG GUID 0(default_pg) Rank 2] ProcessGroupNCCL preparing to dump debug info. Include stack trace: 1, only active collectives: 0
+[rank0]:[E1112 03:00:08.487446535 ProcessGroupNCCL.cpp:1890] [PG ID 0 PG GUID 0(default_pg) Rank 0] Received a dump signal due to a collective timeout from this local rank and we will try our best to dump the debug info. Last enqueued NCCL work: 10353, last completed NCCL work: 10352.This is most likely caused by incorrect usages of collectives, e.g., wrong sizes used across ranks, the order of collectives is not same for all ranks or the scheduled collective, for some reason, didn't run. Additionally, this can be caused by GIL deadlock or other reasons such as network errors or bugs in the communications library (e.g. NCCL), etc. 
+[rank1]:[E1112 03:00:08.487450345 ProcessGroupNCCL.cpp:1825] [PG ID 0 PG GUID 0(default_pg) Rank 1] Observed flight recorder dump signal from another rank via TCPStore.
+[rank1]:[E1112 03:00:08.487554075 ProcessGroupNCCL.cpp:1890] [PG ID 0 PG GUID 0(default_pg) Rank 1] Received a dump signal due to a collective timeout from  rank 0 and we will try our best to dump the debug info. Last enqueued NCCL work: 10353, last completed NCCL work: 10352.This is most likely caused by incorrect usages of collectives, e.g., wrong sizes used across ranks, the order of collectives is not same for all ranks or the scheduled collective, for some reason, didn't run. Additionally, this can be caused by GIL deadlock or other reasons such as network errors or bugs in the communications library (e.g. NCCL), etc. 
+[rank0]:[E1112 03:00:08.487853617 ProcessGroupNCCL.cpp:1606] [PG ID 0 PG GUID 0(default_pg) Rank 0] ProcessGroupNCCL preparing to dump debug info. Include stack trace: 1, only active collectives: 0
+[rank1]:[E1112 03:00:08.488091419 ProcessGroupNCCL.cpp:1606] [PG ID 0 PG GUID 0(default_pg) Rank 1] ProcessGroupNCCL preparing to dump debug info. Include stack trace: 1, only active collectives: 0
+[rank1]:[E1112 03:00:08.570943595 ProcessGroupNCCL.cpp:688] [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=10353, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=600000) ran for 600053 milliseconds before timing out.
+[rank1]:[E1112 03:00:08.571136426 ProcessGroupNCCL.cpp:2277] [PG ID 0 PG GUID 0(default_pg) Rank 1]  failure detected by watchdog at work sequence id: 10353 PG status: last enqueued work: 10353, last completed work: 10352
+[rank1]:[E1112 03:00:08.571146867 ProcessGroupNCCL.cpp:735] Stack trace of the failed collective not found, potentially because FlightRecorder is disabled. You can enable it by setting TORCH_NCCL_TRACE_BUFFER_SIZE to a non-zero value.
+[rank2]:[E1112 03:00:08.654790469 ProcessGroupNCCL.cpp:688] [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=10353, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=600000) ran for 600034 milliseconds before timing out.
+[rank2]:[E1112 03:00:08.654953320 ProcessGroupNCCL.cpp:2277] [PG ID 0 PG GUID 0(default_pg) Rank 2]  failure detected by watchdog at work sequence id: 10353 PG status: last enqueued work: 10353, last completed work: 10352
+[rank2]:[E1112 03:00:08.654963940 ProcessGroupNCCL.cpp:735] Stack trace of the failed collective not found, potentially because FlightRecorder is disabled. You can enable it by setting TORCH_NCCL_TRACE_BUFFER_SIZE to a non-zero value.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main.py", line 122, in <module>
+[rank1]:     main()
+[rank1]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main.py", line 118, in main
+[rank1]:     trainer.train(load_model_step=load_model_step, num_samples=3, num_preds=num_preds)
+[rank1]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/denoising_diffusion_pytorch/video_denoising_diffusion_pytorch.py", line 1655, in train
+[rank1]:     self.eval_network(prob_focus_present, focus_present_mask, num_samples = num_samples, num_preds = num_preds)
+[rank1]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/denoising_diffusion_pytorch/video_denoising_diffusion_pytorch.py", line 1739, in eval_network
+[rank1]:     all_videos_list = torch.cat(all_videos_list, dim = 0)
+[rank1]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: ValueError: torch.cat(): expected a non-empty list of Tensors
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main.py", line 122, in <module>
+[rank0]:     main()
+[rank0]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main.py", line 118, in main
+[rank0]:     trainer.train(load_model_step=load_model_step, num_samples=3, num_preds=num_preds)
+[rank0]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/denoising_diffusion_pytorch/video_denoising_diffusion_pytorch.py", line 1655, in train
+[rank0]:     self.eval_network(prob_focus_present, focus_present_mask, num_samples = num_samples, num_preds = num_preds)
+[rank0]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/denoising_diffusion_pytorch/video_denoising_diffusion_pytorch.py", line 1739, in eval_network
+[rank0]:     all_videos_list = torch.cat(all_videos_list, dim = 0)
+[rank0]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: ValueError: torch.cat(): expected a non-empty list of Tensors
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main.py", line 122, in <module>
+[rank2]:     main()
+[rank2]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main.py", line 118, in main
+[rank2]:     trainer.train(load_model_step=load_model_step, num_samples=3, num_preds=num_preds)
+[rank2]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/denoising_diffusion_pytorch/video_denoising_diffusion_pytorch.py", line 1655, in train
+[rank2]:     self.eval_network(prob_focus_present, focus_present_mask, num_samples = num_samples, num_preds = num_preds)
+[rank2]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/denoising_diffusion_pytorch/video_denoising_diffusion_pytorch.py", line 1739, in eval_network
+[rank2]:     all_videos_list = torch.cat(all_videos_list, dim = 0)
+[rank2]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]: ValueError: torch.cat(): expected a non-empty list of Tensors
+[rank0]:[E1112 03:01:07.100293248 ProcessGroupNCCL.cpp:749] [Rank 0] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank0]:[E1112 03:01:07.100358598 ProcessGroupNCCL.cpp:763] [Rank 0] To avoid data inconsistency, we are taking the entire process down.
+[rank0]:[E1112 03:01:07.132286901 ProcessGroupNCCL.cpp:2093] [PG ID 0 PG GUID 0(default_pg) Rank 0] Process group watchdog thread terminated with exception: [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=10353, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=600000) ran for 600023 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:691 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f0a0b3329f8 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x304 (0x7f0a742bec44 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #2: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x1a19 (0x7f0a742c37c9 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #3: c10d::ProcessGroupNCCL::Watchdog::run() + 0x148 (0x7f0a742c5238 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #4: <unknown function> + 0xef0e4 (0x7f0a097f20e4 in /usr/lib64/libstdc++.so.6)
+frame #5: <unknown function> + 0xa6fec (0x7f0aa15a8fec in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x12e418 (0x7f0aa1630418 in /lib64/libc.so.6)
+
+terminate called after throwing an instance of 'c10::DistBackendError'
+  what():  [PG ID 0 PG GUID 0(default_pg) Rank 0] Process group watchdog thread terminated with exception: [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=10353, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=600000) ran for 600023 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:691 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f0a0b3329f8 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x304 (0x7f0a742bec44 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #2: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x1a19 (0x7f0a742c37c9 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #3: c10d::ProcessGroupNCCL::Watchdog::run() + 0x148 (0x7f0a742c5238 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #4: <unknown function> + 0xef0e4 (0x7f0a097f20e4 in /usr/lib64/libstdc++.so.6)
+frame #5: <unknown function> + 0xa6fec (0x7f0aa15a8fec in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x12e418 (0x7f0aa1630418 in /lib64/libc.so.6)
+
+Exception raised from run at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:2099 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f0a0b3329f8 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x9cc334 (0x7f0a720f2334 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #2: <unknown function> + 0xef0e4 (0x7f0a097f20e4 in /usr/lib64/libstdc++.so.6)
+frame #3: <unknown function> + 0xa6fec (0x7f0aa15a8fec in /lib64/libc.so.6)
+frame #4: <unknown function> + 0x12e418 (0x7f0aa1630418 in /lib64/libc.so.6)
+
+[rank1]:[E1112 03:01:09.199048239 ProcessGroupNCCL.cpp:749] [Rank 1] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank1]:[E1112 03:01:09.199086550 ProcessGroupNCCL.cpp:763] [Rank 1] To avoid data inconsistency, we are taking the entire process down.
+[rank1]:[E1112 03:01:09.200436658 ProcessGroupNCCL.cpp:2093] [PG ID 0 PG GUID 0(default_pg) Rank 1] Process group watchdog thread terminated with exception: [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=10353, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=600000) ran for 600053 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:691 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f3122f329f8 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x304 (0x7f318bebec44 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #2: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x1a19 (0x7f318bec37c9 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #3: c10d::ProcessGroupNCCL::Watchdog::run() + 0x148 (0x7f318bec5238 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #4: <unknown function> + 0xef0e4 (0x7f31213f20e4 in /usr/lib64/libstdc++.so.6)
+frame #5: <unknown function> + 0xa6fec (0x7f31b91dffec in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x12e418 (0x7f31b9267418 in /lib64/libc.so.6)
+
+terminate called after throwing an instance of 'c10::DistBackendError'
+  what():  [PG ID 0 PG GUID 0(default_pg) Rank 1] Process group watchdog thread terminated with exception: [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=10353, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=600000) ran for 600053 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:691 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f3122f329f8 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x304 (0x7f318bebec44 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #2: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x1a19 (0x7f318bec37c9 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #3: c10d::ProcessGroupNCCL::Watchdog::run() + 0x148 (0x7f318bec5238 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #4: <unknown function> + 0xef0e4 (0x7f31213f20e4 in /usr/lib64/libstdc++.so.6)
+frame #5: <unknown function> + 0xa6fec (0x7f31b91dffec in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x12e418 (0x7f31b9267418 in /lib64/libc.so.6)
+
+Exception raised from run at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:2099 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f3122f329f8 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x9cc334 (0x7f3189cf2334 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #2: <unknown function> + 0xef0e4 (0x7f31213f20e4 in /usr/lib64/libstdc++.so.6)
+frame #3: <unknown function> + 0xa6fec (0x7f31b91dffec in /lib64/libc.so.6)
+frame #4: <unknown function> + 0x12e418 (0x7f31b9267418 in /lib64/libc.so.6)
+
+[rank2]:[E1112 03:01:09.285177817 ProcessGroupNCCL.cpp:749] [Rank 2] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank2]:[E1112 03:01:09.285214017 ProcessGroupNCCL.cpp:763] [Rank 2] To avoid data inconsistency, we are taking the entire process down.
+[rank2]:[E1112 03:01:09.286258294 ProcessGroupNCCL.cpp:2093] [PG ID 0 PG GUID 0(default_pg) Rank 2] Process group watchdog thread terminated with exception: [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=10353, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=600000) ran for 600034 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:691 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f4fcef329f8 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x304 (0x7f5037ebec44 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #2: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x1a19 (0x7f5037ec37c9 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #3: c10d::ProcessGroupNCCL::Watchdog::run() + 0x148 (0x7f5037ec5238 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #4: <unknown function> + 0xef0e4 (0x7f4fcd3f20e4 in /usr/lib64/libstdc++.so.6)
+frame #5: <unknown function> + 0xa6fec (0x7f50651b3fec in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x12e418 (0x7f506523b418 in /lib64/libc.so.6)
+
+terminate called after throwing an instance of 'c10::DistBackendError'
+  what():  [PG ID 0 PG GUID 0(default_pg) Rank 2] Process group watchdog thread terminated with exception: [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=10353, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=600000) ran for 600034 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:691 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f4fcef329f8 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x304 (0x7f5037ebec44 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #2: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x1a19 (0x7f5037ec37c9 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #3: c10d::ProcessGroupNCCL::Watchdog::run() + 0x148 (0x7f5037ec5238 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #4: <unknown function> + 0xef0e4 (0x7f4fcd3f20e4 in /usr/lib64/libstdc++.so.6)
+frame #5: <unknown function> + 0xa6fec (0x7f50651b3fec in /lib64/libc.so.6)
+frame #6: <unknown function> + 0x12e418 (0x7f506523b418 in /lib64/libc.so.6)
+
+Exception raised from run at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:2099 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x98 (0x7f4fcef329f8 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x9cc334 (0x7f5035cf2334 in /cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/lib/libtorch_hip.so)
+frame #2: <unknown function> + 0xef0e4 (0x7f4fcd3f20e4 in /usr/lib64/libstdc++.so.6)
+frame #3: <unknown function> + 0xa6fec (0x7f50651b3fec in /lib64/libc.so.6)
+frame #4: <unknown function> + 0x12e418 (0x7f506523b418 in /lib64/libc.so.6)
+
+W1112 03:01:47.213000 3917415 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 3917488 closing signal SIGTERM
+W1112 03:01:47.298000 3917415 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 3917489 closing signal SIGTERM
+W1112 03:01:47.299000 3917415 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 3917490 closing signal SIGTERM
+E1112 03:01:53.838000 3917415 torch/distributed/elastic/multiprocessing/api.py:984] failed (exitcode: -6) local_rank: 0 (pid: 3917487) of binary: /cosmos/nfs/home/dyvo/venvs/nonlinearmech/bin/python3
+Traceback (most recent call last):
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech/bin/accelerate", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/accelerate/commands/accelerate_cli.py", line 45, in main
+    args.func(args)
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/accelerate/commands/launch.py", line 909, in launch_command
+    multi_gpu_launcher(args)
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/accelerate/commands/launch.py", line 604, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/distributed/run.py", line 982, in run
+    elastic_launch(
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+=========================================================
+main.py FAILED
+---------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-11-12_03:01:53
+  host      : x8000c2s5b1n0.cosmos.sdsc.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : -6 (pid: 3917488)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 3917488
+[2]:
+  time      : 2026-11-12_03:01:53
+  host      : x8000c2s5b1n0.cosmos.sdsc.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : -6 (pid: 3917489)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 3917489
+[3]:
+  time      : 2026-11-12_03:01:53
+  host      : x8000c2s5b1n0.cosmos.sdsc.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : -15 (pid: 3917490)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 3917490
+---------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-11-12_03:01:47
+  host      : x8000c2s5b1n0.cosmos.sdsc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : -6 (pid: 3917487)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 3917487
+=========================================================
