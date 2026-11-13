@@ -1,0 +1,40 @@
+
+FROM rocm/pytorch:rocm7.0_ubuntu22.04_py3.10_pytorch_release_2.6.0
+
+ENV PYTHONUNBUFFERED=1
+ENV PIP_NO_CACHE_DIR=1
+
+WORKDIR /workspace
+
+COPY requirements-legacy.txt /tmp/requirements-legacy.txt
+
+RUN python3 -m pip install \
+    --no-cache-dir \
+    -r /tmp/requirements-legacy.txt
+
+RUN python3 -m pip check
+
+RUN python3 - <<'PY'
+import torch
+import torchvision
+import accelerate
+import numpy
+import einops
+import rotary_embedding_torch
+import imageio
+import networkx
+import matplotlib
+import PIL
+
+print("PyTorch:", torch.__version__)
+print("ROCm/HIP:", torch.version.hip)
+print("Torchvision:", torchvision.__version__)
+print("Accelerate:", accelerate.__version__)
+print("NumPy:", numpy.__version__)
+print("Einops:", einops.__version__)
+print("Pillow:", PIL.__version__)
+
+print("Dependencies imported successfully.")
+PY
+
+CMD ["/bin/bash"]
