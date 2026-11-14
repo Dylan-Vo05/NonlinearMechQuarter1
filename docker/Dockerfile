@@ -6,11 +6,11 @@ ENV PIP_NO_CACHE_DIR=1
 
 WORKDIR /workspace
 
-COPY requirements-legacy.txt /tmp/requirements-legacy.txt
+COPY requirements.txt /tmp/requirements.txt
 
 RUN python3 -m pip install \
     --no-cache-dir \
-    -r /tmp/requirements-legacy.txt
+    -r /tmp/requirements.txt
 
 RUN python3 -m pip check
 
