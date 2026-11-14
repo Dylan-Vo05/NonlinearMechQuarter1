@@ -21,12 +21,32 @@ echo "Job ID: $SLURM_JOB_ID"
 echo "Node: $(hostname)"
 echo "Date: $(date)"
 
+echo "Python executable:"
+which python
+
+echo "Python version:"
+python --version
+
+echo "Accelerate package:"
+python -m pip show accelerate
+
+echo "Accelerate executable:"
+which accelerate
+
+echo "PATH:"
+echo $PATH
+
 export MIOPEN_FIND_MODE=3
 export MIOPEN_FIND_ENFORCE=3
 export MIOPEN_USER_DB_PATH=/tmp/$USER/my-miopen-cache
 export PYTORCH_TUNABLEOP_ENABLED=1
 
-accelerate launch --mixed_precision=fp16 --num_processes=4 --num_machines=1 --dynamo_backend=no main_modern.py 
+python -m accelerate.commands.launch \
+    --mixed_precision=fp16 \
+    --num_processes=4 \
+    --num_machines=1 \
+    --dynamo_backend=no \
+    main_modern.py
 
 EXIT_CODE=$?
 
