@@ -12,7 +12,7 @@ module purge
 module load rocm/7.0.0
 module load cray-python/3.12.12
 
-source ~/venvs/nonlinearmech_modern/bin/activate
+source ~/venvs/nonlinearmech_rocm/bin/activate
 
 cd /cosmos/nfs/home/dyvo/NonlinearMechQuarter1
 
