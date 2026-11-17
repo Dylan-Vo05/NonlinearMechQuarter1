@@ -10,7 +10,7 @@ def main():
 
     ### User input ###
     # define run name, if run name already exists and is not 'pretrained', load_model_step must be provided
-    run_name = 'nccl_test_4'
+    run_name = 'nccl_num_samp_test'
 
     if run_name == 'pretrained':
         load_model_step = 200000  # pretrained model was trained for 200k steps
@@ -120,7 +120,7 @@ def main():
         wandb_username = wandb_username
     )
 
-    trainer.train(load_model_step=load_model_step, num_samples=3, num_preds=num_preds)
+    trainer.train(load_model_step=load_model_step, num_samples=4, num_preds=num_preds)
     trainer.eval_target(target_labels_dir, guidance_scale=guidance_scale, num_preds=num_preds)
 
 if __name__ == '__main__':
