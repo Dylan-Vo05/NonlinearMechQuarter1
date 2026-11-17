@@ -108,7 +108,7 @@ def main():
         train_batch_size = config['batch_size'],
         test_batch_size = config['batch_size'],
         train_lr = config['learning_rate'],
-        save_and_sample_every = 1000,
+        save_and_sample_every = 5000,
         train_num_steps = 10000,
         ema_decay = 0.995,
         log = False,
