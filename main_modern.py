@@ -10,7 +10,7 @@ def main():
 
     ### User input ###
     # define run name, if run name already exists and is not 'pretrained', load_model_step must be provided
-    run_name = 'nccl_removed_eval_test'
+    run_name = 'nccl_bigger_run'
 
     if run_name == 'pretrained':
         load_model_step = 200000  # pretrained model was trained for 200k steps
@@ -108,8 +108,8 @@ def main():
         train_batch_size = config['batch_size'],
         test_batch_size = config['batch_size'],
         train_lr = config['learning_rate'],
-        save_and_sample_every = 5000,
-        train_num_steps = 10000,
+        save_and_sample_every = 20000,
+        train_num_steps = 100000,
         ema_decay = 0.995,
         log = False,
         null_cond_prob = 0.1,
