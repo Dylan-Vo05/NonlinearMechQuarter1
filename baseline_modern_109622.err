@@ -1,0 +1,182 @@
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/nn/modules/linear.py:125: UserWarning: Unmatched validator: "ROCM_VERSION" is required, but the tuning results does not provide it.  (Triggered internally at /pytorch/aten/src/ATen/hip/tunable/Tunable.cpp:331.)
+  return F.linear(input, self.weight, self.bias)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/nn/modules/linear.py:125: UserWarning: Unmatched validator: "HIP_VERSION" is provided, but pytorch is unable to consume it.  (Triggered internally at /pytorch/aten/src/ATen/hip/tunable/Tunable.cpp:339.)
+  return F.linear(input, self.weight, self.bias)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/nn/modules/linear.py:125: UserWarning: Unmatched validator: "ROCM_VERSION" is required, but the tuning results does not provide it.  (Triggered internally at /pytorch/aten/src/ATen/hip/tunable/Tunable.cpp:331.)
+  return F.linear(input, self.weight, self.bias)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/nn/modules/linear.py:125: UserWarning: Unmatched validator: "HIP_VERSION" is provided, but pytorch is unable to consume it.  (Triggered internally at /pytorch/aten/src/ATen/hip/tunable/Tunable.cpp:339.)
+  return F.linear(input, self.weight, self.bias)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/nn/modules/linear.py:125: UserWarning: Unmatched validator: "ROCM_VERSION" is required, but the tuning results does not provide it.  (Triggered internally at /pytorch/aten/src/ATen/hip/tunable/Tunable.cpp:331.)
+  return F.linear(input, self.weight, self.bias)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/nn/modules/linear.py:125: UserWarning: Unmatched validator: "HIP_VERSION" is provided, but pytorch is unable to consume it.  (Triggered internally at /pytorch/aten/src/ATen/hip/tunable/Tunable.cpp:339.)
+  return F.linear(input, self.weight, self.bias)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/nn/modules/linear.py:125: UserWarning: Unmatched validator: "ROCM_VERSION" is required, but the tuning results does not provide it.  (Triggered internally at /pytorch/aten/src/ATen/hip/tunable/Tunable.cpp:331.)
+  return F.linear(input, self.weight, self.bias)
+/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/nn/modules/linear.py:125: UserWarning: Unmatched validator: "HIP_VERSION" is provided, but pytorch is unable to consume it.  (Triggered internally at /pytorch/aten/src/ATen/hip/tunable/Tunable.cpp:339.)
+  return F.linear(input, self.weight, self.bias)
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :31-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<256, 128, 128, 64, Default, 32, 32, 2, 2, 8, 8, 8, 1, 1, BlkGemmPipelineScheduler: Intrawave, BlkGemmPipelineVersion: v3>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+MIOpen(HIP): Error [Init] Not found :57-DeviceGroupedConvFwdMultipleABD_Xdl_CShuffle_V3<64, 16, 16, 128, Default, 16, 16, 1, 1, 8, 8, 4, 1, 1, BlkGemmPipelineScheduler: Interwave, BlkGemmPipelineVersion: v1>
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main_modern.py", line 127, in <module>
+[rank1]:     main()
+[rank1]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main_modern.py", line 124, in main
+[rank1]:     trainer.eval_target(target_labels_dir, guidance_scale=guidance_scale, num_preds=num_preds)
+[rank1]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/denoising_diffusion_pytorch/video_denoising_diffusion_pytorch.py", line 1761, in eval_target
+[rank1]:     self.accelerator.wait_for_everyone()
+[rank1]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/accelerator.py", line 3310, in wait_for_everyone
+[rank1]:     wait_for_everyone()
+[rank1]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/utils/other.py", line 372, in wait_for_everyone
+[rank1]:     PartialState().wait_for_everyone()
+[rank1]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/state.py", line 412, in wait_for_everyone
+[rank1]:     torch.distributed.barrier(device_ids=[self.local_process_index])
+[rank1]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 4782, in barrier
+[rank1]:     group = group or _get_default_group()
+[rank1]:                      ^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 1303, in _get_default_group
+[rank1]:     raise ValueError(
+[rank1]: ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main_modern.py", line 127, in <module>
+[rank3]:     main()
+[rank3]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main_modern.py", line 124, in main
+[rank3]:     trainer.eval_target(target_labels_dir, guidance_scale=guidance_scale, num_preds=num_preds)
+[rank3]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/denoising_diffusion_pytorch/video_denoising_diffusion_pytorch.py", line 1761, in eval_target
+[rank3]:     self.accelerator.wait_for_everyone()
+[rank3]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/accelerator.py", line 3310, in wait_for_everyone
+[rank3]:     wait_for_everyone()
+[rank3]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/utils/other.py", line 372, in wait_for_everyone
+[rank3]:     PartialState().wait_for_everyone()
+[rank3]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/state.py", line 412, in wait_for_everyone
+[rank3]:     torch.distributed.barrier(device_ids=[self.local_process_index])
+[rank3]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank3]:     return func(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 4782, in barrier
+[rank3]:     group = group or _get_default_group()
+[rank3]:                      ^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 1303, in _get_default_group
+[rank3]:     raise ValueError(
+[rank3]: ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main_modern.py", line 127, in <module>
+[rank2]:     main()
+[rank2]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main_modern.py", line 124, in main
+[rank2]:     trainer.eval_target(target_labels_dir, guidance_scale=guidance_scale, num_preds=num_preds)
+[rank2]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/denoising_diffusion_pytorch/video_denoising_diffusion_pytorch.py", line 1761, in eval_target
+[rank2]:     self.accelerator.wait_for_everyone()
+[rank2]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/accelerator.py", line 3310, in wait_for_everyone
+[rank2]:     wait_for_everyone()
+[rank2]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/utils/other.py", line 372, in wait_for_everyone
+[rank2]:     PartialState().wait_for_everyone()
+[rank2]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/state.py", line 412, in wait_for_everyone
+[rank2]:     torch.distributed.barrier(device_ids=[self.local_process_index])
+[rank2]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank2]:     return func(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 4782, in barrier
+[rank2]:     group = group or _get_default_group()
+[rank2]:                      ^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 1303, in _get_default_group
+[rank2]:     raise ValueError(
+[rank2]: ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main_modern.py", line 127, in <module>
+[rank0]:     main()
+[rank0]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/main_modern.py", line 124, in main
+[rank0]:     trainer.eval_target(target_labels_dir, guidance_scale=guidance_scale, num_preds=num_preds)
+[rank0]:   File "/cosmos/nfs/home/dyvo/NonlinearMechQuarter1/denoising_diffusion_pytorch/video_denoising_diffusion_pytorch.py", line 1761, in eval_target
+[rank0]:     self.accelerator.wait_for_everyone()
+[rank0]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/accelerator.py", line 3310, in wait_for_everyone
+[rank0]:     wait_for_everyone()
+[rank0]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/utils/other.py", line 372, in wait_for_everyone
+[rank0]:     PartialState().wait_for_everyone()
+[rank0]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/state.py", line 412, in wait_for_everyone
+[rank0]:     torch.distributed.barrier(device_ids=[self.local_process_index])
+[rank0]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 4782, in barrier
+[rank0]:     group = group or _get_default_group()
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py", line 1303, in _get_default_group
+[rank0]:     raise ValueError(
+[rank0]: ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+W1117 05:24:05.948000 706214 torch/distributed/elastic/multiprocessing/api.py:900] Sending process 706286 closing signal SIGTERM
+W1117 05:24:05.957000 706214 torch/distributed/elastic/multiprocessing/api.py:900] Sending process 706287 closing signal SIGTERM
+W1117 05:24:05.958000 706214 torch/distributed/elastic/multiprocessing/api.py:900] Sending process 706288 closing signal SIGTERM
+E1117 05:24:06.939000 706214 torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 0 (pid: 706285) of binary: /cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/commands/launch.py", line 1423, in <module>
+    main()
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/commands/launch.py", line 1419, in main
+    launch_command(args)
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/commands/launch.py", line 1404, in launch_command
+    multi_gpu_launcher(args)
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/accelerate/commands/launch.py", line 1029, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cosmos/nfs/home/dyvo/venvs/nonlinearmech_rocm/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 277, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main_modern.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-11-17_05:24:05
+  host      : x8000c2s0b1n0.cosmos.sdsc.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 706285)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
