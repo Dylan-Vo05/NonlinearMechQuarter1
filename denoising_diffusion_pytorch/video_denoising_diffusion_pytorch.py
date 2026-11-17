@@ -1652,11 +1652,11 @@ class Trainer(object):
                     elapsed_time = time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
                     print(f'current step: {self.step}, total time elapsed: {elapsed_time}')
                 # evaluate network on validation set (including Abaqus simulations)
-                self.eval_network(prob_focus_present, focus_present_mask, num_samples = num_samples, num_preds = num_preds)
-                if self.accelerator.is_main_process:
-                    elapsed_time_validation = time.time() - cur_time
-                    elapsed_time_validation = time.strftime("%H:%M:%S", time.gmtime(elapsed_time_validation))
-                    print(f'time elapsed for validation: {elapsed_time_validation}')
+                # self.eval_network(prob_focus_present, focus_present_mask, num_samples = num_samples, num_preds = num_preds)
+                # if self.accelerator.is_main_process:
+                #     elapsed_time_validation = time.time() - cur_time
+                #     elapsed_time_validation = time.strftime("%H:%M:%S", time.gmtime(elapsed_time_validation))
+                #     print(f'time elapsed for validation: {elapsed_time_validation}')
             
             if self.step != self.train_num_steps:
                 self.step += 1
