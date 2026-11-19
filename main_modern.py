@@ -10,7 +10,7 @@ def main():
 
     ### User input ###
     # define run name, if run name already exists and is not 'pretrained', load_model_step must be provided
-    run_name = 'nccl_bigger_run'
+    run_name = 'nccl_single_gpu' 
 
     if run_name == 'pretrained':
         load_model_step = 200000  # pretrained model was trained for 200k steps
@@ -108,8 +108,8 @@ def main():
         train_batch_size = config['batch_size'],
         test_batch_size = config['batch_size'],
         train_lr = config['learning_rate'],
-        save_and_sample_every = 20000,
-        train_num_steps = 100000,
+        save_and_sample_every = 1000,
+        train_num_steps = 3000,
         ema_decay = 0.995,
         log = False,
         null_cond_prob = 0.1,
@@ -122,6 +122,8 @@ def main():
 
     trainer.train(load_model_step=load_model_step, num_samples=4, num_preds=num_preds)
     trainer.eval_target(target_labels_dir, guidance_scale=guidance_scale, num_preds=num_preds)
+
+    trainer.accelerator.end_training()
 
 if __name__ == '__main__':
     main()

@@ -1669,7 +1669,7 @@ class Trainer(object):
         self.accelerator.print('training completed')
 
         # end training
-        self.accelerator.end_training()
+        # self.accelerator.end_training()
 
     def eval_network(
         self,
