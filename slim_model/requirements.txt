@@ -1,0 +1,5 @@
+# The slim-model code needs nothing beyond the repo's own requirements. If ~/venvs/nonlinearmech_rocm
+# already runs main_modern.py, it runs these scripts too; no install needed.
+# Fresh environment: install PyTorch for ROCm first (as in docker/Dockerfile), then
+#   python -m pip install -r slim_model/requirements.txt
+-r ../requirements.txt
