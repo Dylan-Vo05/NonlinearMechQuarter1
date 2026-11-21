@@ -1768,11 +1768,11 @@ class Trainer(object):
         if self.accelerator.is_main_process:
             # create folder for prediction
             eval_idx = 0
-            while os.path.exists('./' + str(self.results_folder) + '/' + mode + '_' + str(eval_idx) + '/step_' + str(self.step)):
+            while os.path.exists(str(self.results_folder) + '/' + mode + '_' + str(eval_idx) + '/step_' + str(self.step)):
                 eval_idx += 1
             mode = mode + '_' + str(eval_idx)
             
-            os.makedirs('./' + str(self.results_folder) + '/' + mode + '/step_' + str(self.step) + '/gifs', exist_ok=True)
+            os.makedirs(str(self.results_folder) + '/' + mode + '/step_' + str(self.step) + '/gifs', exist_ok=True)
 
             # convert target_labels_dir to tensor
             try:
