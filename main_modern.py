@@ -10,7 +10,7 @@ def main():
 
     ### User input ###
     # define run name, if run name already exists and is not 'pretrained', load_model_step must be provided
-    run_name = 'nccl_full_size' 
+    run_name = 'nccl_full_size_bigbatch' 
 
     if run_name == 'pretrained':
         load_model_step = 200000  # pretrained model was trained for 200k steps
@@ -18,7 +18,7 @@ def main():
         load_model_step = None  # train new model (or change this in case you want to load your own pretrained model)
     
     # number of predictions to generate for each conditioning
-    num_preds = 1
+    num_preds = 5
 
     # guidance scale as defined in 'Classifier-Free Diffusion Guidance' (https://arxiv.org/abs/2207.12598)
     guidance_scale = 5.
