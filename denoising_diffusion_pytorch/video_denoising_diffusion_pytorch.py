@@ -577,6 +577,7 @@ class Unet3D(nn.Module):
         dim,
         out_dim = None,
         dim_mults=(1, 2, 4, 8),
+        num_resnet_blocks = 2,
         channels = 3,
         attn_heads = 8,
         attn_dim_head = 32,
@@ -607,6 +608,7 @@ class Unet3D(nn.Module):
         self.cond_to_time = cond_to_time
         self.per_frame_cond = per_frame_cond
         self.padding_mode = padding_mode
+        self.num_resnet_blocks = num_resnet_blocks
 
         # temporal attention and its relative positional encoding
         rotary_emb = RotaryEmbedding(min(32, attn_dim_head))
@@ -673,9 +675,19 @@ class Unet3D(nn.Module):
         for ind, (dim_in, dim_out) in enumerate(in_out):
             is_last = ind >= (num_resolutions - 1)
 
+            resnet_blocks_down = nn.ModuleList()
+            for block_idx in range(num_resnet_blocks):
+                if block_idx == 0:
+                    resnet_blocks_down.append(
+                        block_klass_cond(dim_in, dim_out)
+                    )
+                else:
+                    resnet_blocks_down.append(
+                        block_klass_cond(dim_out, dim_out)
+                    )
+
             self.downs.append(nn.ModuleList([
-                block_klass_cond(dim_in, dim_out),
-                block_klass_cond(dim_out, dim_out),
+                resnet_blocks_down,
                 Residual(PreNorm(dim_out, SpatialLinearAttention(dim_out, heads = attn_heads, cond_attention = self.cond_attention, cond_dim = self.cond_dim))) if use_sparse_linear_attn else nn.Identity(),
                 Residual(PreNorm(dim_out, temporal_attn(dim_out))),
                 Downsample(dim_out, self.padding_mode) if not is_last else nn.Identity()
@@ -694,9 +706,19 @@ class Unet3D(nn.Module):
         for ind, (dim_in, dim_out) in enumerate(reversed(in_out)):
             is_last = ind >= (num_resolutions - 1)
 
+            resnet_blocks_up = nn.ModuleList()
+            for block_idx in range(num_resnet_blocks):
+                if block_idx == 0:
+                    resnet_blocks_up.append(
+                        block_klass_cond(dim_out * 2, dim_in)
+                    )
+                else:
+                    resnet_blocks_up.append(
+                        block_klass_cond(dim_in, dim_in)
+                    )
+
             self.ups.append(nn.ModuleList([
-                block_klass_cond(dim_out * 2, dim_in),
-                block_klass_cond(dim_in, dim_in),
+                resnet_blocks_up,
                 Residual(PreNorm(dim_in, SpatialLinearAttention(dim_in, heads = attn_heads, cond_attention = self.cond_attention, cond_dim = self.cond_dim))) if use_sparse_linear_attn else nn.Identity(),
                 Residual(PreNorm(dim_in, temporal_attn(dim_in))),
                 Upsample(dim_in, self.padding_mode) if not is_last else nn.Identity()
@@ -796,9 +818,9 @@ class Unet3D(nn.Module):
 
         h = []
 
-        for block1, block2, spatial_attn, temporal_attn, downsample in self.downs:
-            x = block1(x, t)
-            x = block2(x, t)
+        for resnet_blocks_down, spatial_attn, temporal_attn, downsample in self.downs:
+            for block in resnet_blocks_down:
+                x = block(x, t)
             x = spatial_attn(x, label_emb_mm = label_emb_token)
             x = temporal_attn(x, pos_bias = time_rel_pos_bias, focus_present_mask = focus_present_mask, label_emb_mm = label_emb_token_temporal)
             h.append(x)
@@ -809,10 +831,10 @@ class Unet3D(nn.Module):
         x = self.mid_temporal_attn(x, pos_bias = time_rel_pos_bias, focus_present_mask = focus_present_mask, label_emb_mm = label_emb_token_temporal)
         x = self.mid_block2(x, t)
 
-        for block1, block2, spatial_attn, temporal_attn, upsample in self.ups:
+        for resnet_blocks_up, spatial_attn, temporal_attn, upsample in self.ups:
             x = torch.cat((x, h.pop()), dim = 1)
-            x = block1(x, t)
-            x = block2(x, t)
+            for block in resnet_blocks_up:
+                x = block(x, t)
             x = spatial_attn(x, label_emb_mm = label_emb_token)
             x = temporal_attn(x, pos_bias = time_rel_pos_bias, focus_present_mask = focus_present_mask, label_emb_mm = label_emb_token_temporal)
             x = upsample(x)

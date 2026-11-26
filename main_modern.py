@@ -68,6 +68,7 @@ def main():
     model = Unet3D(
         dim = config['unet_dim'],
         dim_mults = (1, 2, 4, 8),
+        num_resnet_blocks = 1,
         channels = len(config['selected_channels']),
         attn_heads = config['unet_attn_heads'],
         attn_dim_head = config['unet_attn_dim_head'],
