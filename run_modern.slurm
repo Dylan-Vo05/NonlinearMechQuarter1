@@ -43,7 +43,7 @@ export PYTORCH_TUNABLEOP_ENABLED=1
 
 python -m accelerate.commands.launch \
     --mixed_precision=fp16 \
-    --num_processes=4 \
+    --num_processes=1 \
     --num_machines=1 \
     --dynamo_backend=no \
     main_modern.py
