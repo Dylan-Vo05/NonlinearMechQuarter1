@@ -1,0 +1,1 @@
+/var/spool/slurmd/job110625/slurm_script: line 16: 1: usage: sbatch slim_model/slurm/train.sbatch <config.yaml> <run_name> [extra args]
