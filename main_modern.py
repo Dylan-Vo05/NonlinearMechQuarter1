@@ -10,15 +10,15 @@ def main():
 
     ### User input ###
     # define run name, if run name already exists and is not 'pretrained', load_model_step must be provided
-    run_name = 'resnet_1block_test'  # change to your run name
+    run_name = 'resnet_1block_test2'  # change to your run name
 
     if run_name == 'pretrained':
         load_model_step = 200000  # pretrained model was trained for 200k steps
     else:
-        load_model_step = 200000  # train new model (or change this in case you want to load your own pretrained model)
+        load_model_step = None  # train new model (or change this in case you want to load your own pretrained model)
     
     # number of predictions to generate for each conditioning
-    num_preds = 5
+    num_preds = 10
 
     # guidance scale as defined in 'Classifier-Free Diffusion Guidance' (https://arxiv.org/abs/2207.12598)
     guidance_scale = 5.
@@ -34,7 +34,7 @@ def main():
 
     ip_kwargs = InitProcessGroupKwargs(
         backend='nccl',
-        timeout=datetime.timedelta(seconds=600)
+        timeout=datetime.timedelta(seconds=1800)
     )  # required to prevent timeout error when nonequal distribution of samplings to GPUs
     accelerator = Accelerator(mixed_precision='fp16', kwargs_handlers=[ddp_kwargs, ip_kwargs], log_with='wandb' if wandb_username is not None else None)
 
