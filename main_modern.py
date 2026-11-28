@@ -15,7 +15,7 @@ def main():
     if run_name == 'pretrained':
         load_model_step = 200000  # pretrained model was trained for 200k steps
     else:
-        load_model_step = None  # train new model (or change this in case you want to load your own pretrained model)
+        load_model_step = 200000  # train new model (or change this in case you want to load your own pretrained model)
     
     # number of predictions to generate for each conditioning
     num_preds = 5
